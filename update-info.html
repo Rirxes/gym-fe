@@ -23,12 +23,63 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <style>
-        .form-control{
-            background-color: #151515;
-            color: #fff;
+        .form-control {
+            background-color: #fff;
+            color: #333;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
         }
-        
 
+        #updateUserForm {
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 0px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #updateUserForm .form-group {
+            margin-bottom: 15px;
+        }
+
+        #updateUserForm .form-control {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        #updateUserForm .form-control:focus {
+            border-color: #f36100;
+            box-shadow: 0 0 5px rgba(243, 97, 0, 0.5);
+        }
+
+        #updateUserForm label {
+            font-weight: bold;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        #updateUserForm button {
+            background-color: #f36100;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        #updateUserForm button:hover {
+            background-color: #e05500;
+        }
+        #updateUserForm .btn-group {
+        display: flex;
+        justify-content: space-between;
+    }
     </style>
 </head>
 
@@ -153,10 +204,10 @@
 
     <!-- Update profile -->
     <!-- Form Start -->
-     <div class="">
+    <div class="">
         <form id="updateUserForm" style="color: #f36100; background-color: #151515;">
             <!-- Tên đăng nhập -->
-    
+
             <div class="form-group">
                 <label for="new-name">Tên:</label>
                 <input type="text" id="new-name" class="form-control" placeholder="Nhập họ tên">
@@ -200,14 +251,14 @@
                 </select>
             </div>
             <!-- Submit Button -->
-            <div class="form-group d-flex justify-content-start">
-                <button type="submit" class="btn btn-primary me-2">Lưu thông tin</button>
-                <button type="button" class="btn btn-primary me-2"
+            <div class="button-group">
+                <button type="submit">Lưu thông tin</button>
+                <button type="button"
                     onclick="window.location.href='/user/home/user'">Thoát</button>
             </div>
         </form>
-     </div>
-    
+    </div>
+
 
     <!-- Footer Section Begin -->
     <section class="footer-section">
