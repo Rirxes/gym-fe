@@ -1,0 +1,16 @@
+{
+    "workouts": [
+        {
+            "date": "2023-10-01",
+            "caloriesBurned": 500
+        },
+        {
+            "date": "2023-10-02",
+            "caloriesBurned": 450
+        },
+        {
+            "date": "2023-10-03",
+            "caloriesBurned": 600
+        }
+    ]
+}
