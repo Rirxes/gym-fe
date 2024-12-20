@@ -26,7 +26,7 @@
         .form-control {
             background-color: #fff;
             color: #333;
-            padding: 10px;
+            padding: auto;
             font-size: 16px;
             border: 1px solid #ccc;
             border-radius: 5px;
@@ -37,7 +37,10 @@
             background-color: #f9f9f9;
             padding: 20px;
             border-radius: 0px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0 10px rgba(30, 22, 22, 0.1);
+            width: 50%;
+            align-items: center;
+            margin: auto;
         }
 
         #updateUserForm .form-group {
@@ -63,7 +66,7 @@
             display: block;
         }
 
-        #updateUserForm button {
+        .primary-btn {
             background-color: #f36100;
             color: #fff;
             padding: 10px 20px;
@@ -71,15 +74,17 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
+            margin-right: 10px;
         }
 
-        #updateUserForm button:hover {
+        .primary-btn:hover {
             background-color: #e05500;
         }
-        #updateUserForm .btn-group {
-        display: flex;
-        justify-content: space-between;
-    }
+
+        .btn-group {
+            display: flex;
+            justify-content: flex-start;
+        }
     </style>
 </head>
 
@@ -203,61 +208,75 @@
     <!-- Breadcrumb Section End -->
 
     <!-- Update profile -->
-    <!-- Form Start -->
-    <div class="">
-        <form id="updateUserForm" style="color: #f36100; background-color: #151515;">
-            <!-- Tên đăng nhập -->
+    <section class="team-section spad">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="team-title">
+                            <div class="section-title">
+                                <span>Edit your</span>
+                                <h2>Profile</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <form id="updateUserForm" style="color: #f36100; background-color: #151515;">
+                <!-- Tên đăng nhập -->
 
-            <div class="form-group">
-                <label for="new-name">Tên:</label>
-                <input type="text" id="new-name" class="form-control" placeholder="Nhập họ tên">
-            </div>
-            <div class="form-group">
-                <label for="new-email">Email:</label>
-                <input type="email" id="new-email" class="form-control" placeholder="Nhập email" required>
-            </div>
-            <div class="form-group">
-                <label for="new-phone">Số điện thoại:</label>
-                <input type="number" id="new-phone" class="form-control" placeholder="Nhập số điện thoại" required>
-            </div>
-            <div class="form-group">
-                <label for="new-gender">Giới tính:</label>
-                <select id="new-gender" class="form-control" required>
-                    <option value="" disabled selected>Chọn giới tính</option>
-                    <option value="nam">Nam</option>
-                    <option value="nu">Nữ</option>
-                    <option value="other">Khác</option>
-                </select>
-            </div>
-            <div class="form-group">
-                <label for="new-age">Tuổi:</label>
-                <input type="number" id="new-age" class="form-control" placeholder="Nhập tuổi" required>
-            </div>
-            <div class="form-group">
-                <label for="new-height">Chiều cao (cm):</label>
-                <input type="number" id="new-height" class="form-control" placeholder="Nhập chiều cao" required>
-            </div>
-            <div class="form-group">
-                <label for="new-weight">Cân nặng (kg):</label>
-                <input type="number" id="new-weight" class="form-control" placeholder="Nhập cân nặng" required>
-            </div>
-            <div class="form-group">
-                <label for="new-goal">Mục tiêu:</label>
-                <select id="new-goal" class="form-control" required>
-                    <option value="" disabled selected>Chọn mục tiêu</option>
-                    <option value="Tăng cân">Tăng cân</option>
-                    <option value="Giữ dáng">Giữ dáng</option>
-                    <option value="Giảm cân">Giảm cân</option>
-                </select>
-            </div>
-            <!-- Submit Button -->
-            <div class="button-group">
-                <button type="submit">Lưu thông tin</button>
-                <button type="button"
-                    onclick="window.location.href='/user/home/user'">Thoát</button>
-            </div>
-        </form>
-    </div>
+                <div class="form-group">
+                    <label for="new-name">Tên:</label>
+                    <input type="text" id="new-name" class="form-control" placeholder="Nhập họ tên">
+                </div>
+                <div class="form-group">
+                    <label for="new-email">Email:</label>
+                    <input type="email" id="new-email" class="form-control" placeholder="Nhập email" required>
+                </div>
+                <div class="form-group">
+                    <label for="new-phone">Số điện thoại:</label>
+                    <input type="number" id="new-phone" class="form-control" placeholder="Nhập số điện thoại" required>
+                </div>
+                <div class="form-group">
+                    <label for="new-gender">Giới tính:</label>
+                    <select id="new-gender" class="form-control" required>
+                        <option value="" disabled selected>Chọn giới tính</option>
+                        <option value="nam">Nam</option>
+                        <option value="nu">Nữ</option>
+                        <option value="other">Khác</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="new-age">Tuổi:</label>
+                    <input type="number" id="new-age" class="form-control" placeholder="Nhập tuổi" required>
+                </div>
+                <div class="form-group">
+                    <label for="new-height">Chiều cao (cm):</label>
+                    <input type="number" id="new-height" class="form-control" placeholder="Nhập chiều cao" required>
+                </div>
+                <div class="form-group">
+                    <label for="new-weight">Cân nặng (kg):</label>
+                    <input type="number" id="new-weight" class="form-control" placeholder="Nhập cân nặng" required>
+                </div>
+                <div class="form-group">
+                    <label for="new-goal">Mục tiêu:</label>
+                    <select id="new-goal" class="form-control" required>
+                        <option value="" disabled selected>Chọn mục tiêu</option>
+                        <option value="Tăng cân">Tăng cân</option>
+                        <option value="Giữ dáng">Giữ dáng</option>
+                        <option value="Giảm cân">Giảm cân</option>
+                    </select>
+                </div>
+                <!-- Submit Button -->
+
+                <div class="btn-group">
+                    <button type="submit" class="primary-btn btn-normal appoinment-btn">Lưu lại</button>
+                    <button type="button" class="primary-btn btn-normal appoinment-btn"
+                        onclick="window.location.href='index.html'">Thoát</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
 
 
     <!-- Footer Section Begin -->
@@ -335,7 +354,6 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
     <!-- Footer Section End -->
     <script>
