@@ -23,16 +23,16 @@
     <link rel="stylesheet" href="css/slicknav.min.css" type="text/css">
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <style>
-        .row {
-            display: grid;
+        .col-lg-8 {
+            max-width: 100%;
         }
 
         .blog-pagination ul {
             display: flex;
             list-style: none;
-            padding: 0;
-            margin: 20px 0;
             justify-content: center;
+            align-items: center;
+            margin: auto;
         }
 
         .blog-pagination li {
@@ -40,11 +40,12 @@
         }
 
         .blog-pagination li a {
-            color: #333;
+            color: #d6d6d6;
             text-decoration: none;
             padding: 5px 10px;
-            border: 1px solid #ddd;
+            border: 1px solid #8b8b8b;
             border-radius: 3px;
+
         }
 
         .blog-pagination li.active a {
@@ -178,43 +179,18 @@
     <!-- Blog Section Begin -->
     <section class="blog-section spad">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-8 p-0" id="blogContainer">
-                    <div class="blog-item">
-                        <div class="bi-pic">
-                            <img src="img/blog/blog-2.jpg" alt="">
-                        </div>
-                        <div class="bi-text">
-                            <h5><a href="./blog-details.html">Thịt bò và 5 lợi ích của chúng</a></h5>
-                            <ul>
-                                <li>by Admin</li>
-                                <li>Aug,15, 2019</li>
-                                <li>20 Comment</li>
-                            </ul>
-                            <p>Theo nghiên cứu khoa học gần đây, thịt bò có tác dụng rất rõ ràng đối với tập luyện...
-                            </p>
-                        </div>
+            <div class="row" style="max-width: 100%;">
+                <div>
+                    <div class="col-lg-8 p-0" id="blogContainer">
+                        <!-- Blog items will be inserted here -->
                     </div>
-                    <div class="blog-item">
-                        <div class="bi-pic">
-                            <img src="img/blog/blog-5.jpg" alt="">
-                        </div>
-                        <div class="bi-text">
-                            <h5><a href="./blog-details.html">Tráng miệng với hoa quả</a></h5>
-                            <ul>
-                                <li>by Admin</li>
-                                <li>Aug,15, 2019</li>
-                                <li>20 Comment</li>
-                            </ul>
-                            <p>Hoa quả là thực phẩm bổ sung dinh dưỡng rất tốt cho cơ thể...</p>
-                        </div>
+                    <div class="blog-pagination">
+                        <ul id="paginationContainer">
+                            <!-- Pagination items will be inserted here -->
+                        </ul>
                     </div>
-
-
                 </div>
-                <div class="blog-pagination">
-                    <ul id="paginationContainer"></ul>
-                </div>
+
 
                 <div class="col-lg-4 col-md-8 p-0">
                     <div class="sidebar-option">
@@ -246,6 +222,7 @@
 
                     </div>
                 </div>
+
             </div>
         </div>
     </section>
@@ -382,7 +359,6 @@
                     blogContainer.insertAdjacentHTML("beforeend", blogItem);
                 });
             }
-
             function renderPagination() {
                 paginationContainer.innerHTML = ""; // Clear current pagination
 
@@ -395,7 +371,7 @@
                 }
 
                 // Previous button
-                const prevButton = `<li class="${currentPage === 1 ? 'disabled' : ''}"><a href="#" id="prevButton">&#10094;</a></li>`;
+                const prevButton = `<li class="${currentPage === 1 ? 'disabled' : ''}"><a href="#" id="prevButton">Prev</a></li>`;
                 paginationContainer.insertAdjacentHTML("beforeend", prevButton);
 
                 for (let i = startPage; i <= endPage; i++) {
@@ -404,7 +380,7 @@
                 }
 
                 // Next button
-                const nextButton = `<li class="${currentPage === totalPages ? 'disabled' : ''}"><a href="#" id="nextButton">&#10095;</a></li>`;
+                const nextButton = `<li class="${currentPage === totalPages ? 'disabled' : ''}"><a href="#" id="nextButton">Next</a></li>`;
                 paginationContainer.insertAdjacentHTML("beforeend", nextButton);
 
                 // Add click event listeners to pagination items
@@ -425,6 +401,7 @@
                     });
                 });
             }
+
 
             fetchPosts();
         });

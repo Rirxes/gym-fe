@@ -1,16 +1,39 @@
 {
     "workouts": [
         {
-            "date": "2023-10-01",
-            "caloriesBurned": 500
+            "name": "Stretching",
+            "status":"complete",
+            "caloriesBurned": 500,
+            "description": "Stretch your arms, legs, and back to improve flexibility and prevent injury.",
+            "image": "https://i.pinimg.com/originals/07/71/2a/07712a0ba802feff37507a033f638f94.gif"
         },
         {
-            "date": "2023-10-02",
-            "caloriesBurned": 450
+            "name": "Plank",
+            "status":"complete",
+            "caloriesBurned": 450,
+            "description": "Get into a push-up position with your hands directly under your shoulders. Hold your body in a straight line from head to heels.",
+            "image": "https://hips.hearstapps.com/hmg-prod/images/workouts/2016/03/plank-1457045584.gif?resize=640:*"
         },
         {
-            "date": "2023-10-03",
-            "caloriesBurned": 600
+            "name": "Jumping Jacks",
+            "status":"complete",
+            "caloriesBurned": 600,
+            "description": "Stand with your feet together and your hands at your sides. Jump up and spread your legs while raising your arms above your head. Jump back to the starting position.",
+            "image": "https://cdn.dribbble.com/users/2931468/screenshots/5720362/media/e87bb48393c8202ff31e48a506d53595.gif"
+        },
+        {
+            "name": "Push-ups",
+            "status":"complete",
+            "caloriesBurned": 550,
+            "description": "Get into a plank position with your hands shoulder-width apart. Lower your body until your chest touches the ground, then push back up.",
+            "image": "https://i.pinimg.com/originals/fd/ea/01/fdea01bad94da6160033f9745e65f9ff.gif"
+        },
+        {
+            "name": "Squats",
+            "status":"complete",
+            "caloriesBurned": 700,
+            "description": "Stand with your feet shoulder-width apart and your arms at your sides. Lower your body by bending your knees and pushing your hips back, then return to the starting position.",
+            "image": "https://media.tenor.com/1NY6qOs30XIAAAAM/goblet-squad.gif"
         }
     ]
 }
