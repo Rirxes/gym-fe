@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "title": "Gym Powder",
+        "price": 1.99,
+        "description": "Fresh, juicy apples that are perfect for snacking or baking.",
+        "image": "https://product.hstatic.net/1000314545/product/suplo-008a-01_master.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Gym Bag",
+        "price": 0.99,
+        "description": "Sweet, ripe bananas that are great for smoothies or a quick snack.",
+        "image": "https://images-na.ssl-images-amazon.com/images/I/91wv23DWzPL.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Iron push up",
+        "price": 1.49,
+        "description": "Juicy oranges that are packed with vitamin C and perfect for juicing.",
+        "image": "https://m.media-amazon.com/images/I/71qh3RtM-iL._AC_UF894,1000_QL80_.jpg"
+    },
+    {
+        "id": 4,
+        "title": "Gym Gloves",
+        "price": 2.49,
+        "description": "Plump, juicy grapes that are great for snacking or adding to salads.",
+        "image": "https://cdn4.volusion.store/yjyhh-epwjs/v/vspfiles/photos/5063-2.jpg?v-cache=1730555214"
+    }
+]

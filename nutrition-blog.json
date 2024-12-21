@@ -1,0 +1,62 @@
+[
+    {
+        "id": 1,
+        "title": "The Importance of a Balanced Diet",
+        "calo": 500,
+        "body": "A balanced diet is crucial for maintaining optimal health and well-being. It provides the necessary nutrients that your body needs to function correctly. A balanced diet includes a variety of foods from all the food groups: fruits, vegetables, protein, dairy, and grains."
+    },
+    {
+        "id": 2,
+        "title": "Top 10 Superfoods You Should Include in Your Diet",
+        "calo": 450,
+        "body": "Superfoods are nutrient-rich foods that are beneficial for health and well-being. They are packed with vitamins, minerals, and antioxidants. Some of the top superfoods include blueberries, kale, salmon, and quinoa."
+    },
+    {
+        "id": 3,
+        "title": "How to Create a Healthy Meal Plan",
+        "calo": 600,
+        "body": "Creating a healthy meal plan involves planning your meals and snacks to ensure you get the right balance of nutrients. Start by including a variety of foods from all the food groups, and make sure to include plenty of fruits and vegetables."
+    },
+    {
+        "id": 4,
+        "title": "The Benefits of Drinking Water",
+        "calo": 550,
+        "body": "Drinking water is essential for maintaining good health. It helps to keep your body hydrated, aids in digestion, and helps to flush out toxins. Aim to drink at least eight glasses of water a day."
+    },
+    {
+        "id": 5,
+        "title": "Healthy Eating on a Budget",
+        "calo": 400,
+        "body": "Eating healthy doesn't have to be expensive. There are many ways to eat well on a budget, such as buying in bulk, choosing seasonal produce, and cooking at home. Planning your meals and shopping with a list can also help you save money."
+    },
+    {
+        "id": 6,
+        "title": "The Role of Protein in Your Diet",
+        "calo" : 300,
+        "body": "Protein is an essential nutrient that plays a crucial role in building and repairing tissues, making enzymes and hormones, and supporting overall health. Good sources of protein include meat, fish, eggs, dairy, beans, and nuts."
+    },
+    {
+        "id": 7,
+        "title": "Understanding Carbohydrates",
+        "calo" : 350,
+        "body": "Carbohydrates are an important source of energy for your body. They are found in foods such as bread, pasta, rice, fruits, and vegetables. It's important to choose complex carbohydrates, such as whole grains, for sustained energy."
+    },
+    {
+        "id": 8,
+        "title": "The Benefits of Eating Fiber",
+        "calo" : 250,
+        "body": "Fiber is an important part of a healthy diet. It helps to keep your digestive system healthy, lowers cholesterol levels, and helps to control blood sugar levels. Good sources of fiber include fruits, vegetables, whole grains, and legumes."
+    },
+    {
+        "id": 9,
+        "title": "Healthy Snack Ideas",
+        "calo" : 200,
+        "body": "Snacking can be part of a healthy diet if you choose nutritious options. Some healthy snack ideas include fresh fruit, yogurt, nuts, and vegetables with hummus. Avoid snacks that are high in sugar, salt, and unhealthy fats."
+    },
+    {
+        "id": 10,
+        "title": "The Importance of Vitamins and Minerals",
+        "calo" : 150,
+        "body": "Vitamins and minerals are essential nutrients that your body needs to function properly. They play a role in many bodily functions, including immune function, bone health, and energy production. Make sure to eat a variety of foods to get all the vitamins and minerals you need."
+    }
+]
